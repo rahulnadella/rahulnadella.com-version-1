@@ -1,0 +1,277 @@
+@font-face {
+        font-family: "Computer Modern";
+        src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+    }
+
+html {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    font-family: "Computer Modern", "century gothic", "Lucida Grande", sans-serif	;
+    }
+    
+body{
+    background: #F5F5F5; 
+    }
+
+p.theorem{
+	background-color: rgba(100,100,100,0.07);
+	padding: 10px;
+}
+	
+.header-title{
+    background-color: rgb(115,115,115); 
+    color: rgb(255,255,255);
+    padding: 2px 10px;
+    width: 290px;
+    }
+    
+.header-title:hover{
+   cursor: pointer;
+   }
+    
+.side-content{
+    display: none;
+    background-color: rgb(115,115,115);
+    position: absolute; 
+    width: 296px;
+    top: 347px;
+    padding: 7px;
+    left: 2px;
+    color: rgb(255,255,255);
+    font-size: 11pt;
+    line-height:1.4;
+    /*border-radius: 8px;*/
+	z-index:10;   
+}
+
+
+.question{
+    font-weight: bold
+    }
+
+.side-content span{
+    color: white;
+    cursor: pointer;
+    }
+.side-content span:hover{
+    text-decoration: underline;
+}
+
+.side-content ul{
+        padding-left: 25px;
+        margin: 0px 0px;
+        
+        }
+
+    
+a  {
+    color:rgb(30,30,30);
+    }
+
+#content{
+	width: 900px;
+	margin: auto auto;
+	}
+	
+#subwaycanvasdiv{
+
+} 
+
+.canvasdiv{
+    z-index: 5;
+    position: relative;
+    left: 50%;
+    margin-left: -415px;
+    margin-top:-23px;
+    width: 830px;
+    }
+
+.subwaycanvasHome{
+    height: 295px;
+    }
+.subwaycanvasBlog{
+    height: 240px;
+    }
+   
+
+#subway {
+	margin: auto auto;
+    }
+	
+hr#border {
+	width: 100%;
+    margin: 0px 0px;
+	}
+    
+hr {
+    width:100%;
+    }
+div.title {
+	width: 100%;
+	margin: 0px auto;
+	font-family:"Computer Modern", "Carme", 'century gothic', "Helvetica", sans-serif;
+	}
+.subtitle {
+	font-family:"Computer Modern", "Carme", 'century gothic', "Helvetica", sans-serif;
+}
+.subsubtitle {
+	font-family:"Computer Modern", "Carme", 'century gothic', "Helvetica", sans-serif;
+}
+	
+
+div.date{
+	float: right;
+    margin-left:12px;
+	}
+	
+#maincontent{
+    position: relative;
+	width: 775px;
+    top: 15px;
+	margin: 0px auto;
+	}
+    
+#content-buffer{
+    height: 265px; 
+    weight: 835px;
+    }
+    
+#little-icons{
+    float: right; 
+    position: fixed; 
+    background-color: rgb(110,110,110); 
+    right: 30px; 
+    top:0px; 
+    width: 100px; 
+    height: 23px; 
+    margin:0px 0px;
+    z-index: 10;
+}
+	
+.textcontent{
+	font-family:"Computer Modern", futurabook, Verdana, Arial, sans-serif;
+	font-size: 14pt;
+    line-height: 1.4;
+	}
+
+.table-of-contents{
+    position:fixed;
+    float: left;
+    top: 240px;
+    left: 10px;
+    }
+        
+    
+    
+    
+div#keypressed{
+    display: none;
+    opacity: 0.9;
+    background-color: rgb(115,115,115);
+    position: fixed; 
+    width: 140px;
+    height: 220px; 
+    top: 240px;
+    padding: 13px;
+    left: 40px;
+    color: rgb(255,255,255);
+    font-size: 11pt;
+    line-height:1.4;
+    /*border-radius: 8px;*/
+    border: 1 solid rgb(110,110,110);
+	z-index:10;
+	}
+
+ img.display{
+    display: block;
+    margin: 25px auto;
+    }   
+
+img{
+	margin: 10px 10px;
+	}
+	
+img.icon
+	{
+	vertical-align:middle;
+    margin: 1px 1px;
+	}
+    
+div.imgframe{
+    margin: auto auto;
+	width: 500px;
+    }
+
+img.topicon{
+    margin: 0px 2px;
+    }
+	
+div#closebtn {
+    float: right;
+	z-index:60;
+	right: 15px;
+	top: -8px;
+	margin: 0px 0px;
+	}
+    
+div#closebtn img{
+    margin: 0px 0px;
+    }
+
+	
+div.page{
+	display: none;
+	}
+
+.ci {
+	text-align: center;
+	}
+    
+.posttitle{
+    text-decoration: none;
+    margin: 5px 5px;
+	font-family:"Computer Modern", 'century gothic', "Helvetica", sans-serif;
+
+    }
+
+div.postsample{
+    margin-top: 10px;
+    }
+    
+.indent{
+    text-indent: 20pt;
+    }
+    
+td{
+   padding: 2px 6px;
+}   
+
+.display-table{
+    text-align: right;
+    }
+
+h4{
+    margin: 2px 2px;
+    }
+h3{
+    margin: 3px 3px;
+
+    }
+    
+#blog h3 {
+    font-size: 15pt;
+    font-family:"Computer Modern", Tahoma;
+    margin-top:25px;
+    }
+    
+li{
+    margin-top: 10px;
+    }
+ 
+.date a{
+    text-decoration: none;
+    }
+    
+.date a:hover{
+    text-decoration: underline;
+    }

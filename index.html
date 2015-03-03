@@ -1,0 +1,1848 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+
+
+<meta name="author" content="Rahul Nadella" />
+
+<meta name="description"
+	content="In the long-run, the life-expectancy of everyone converges to zero." />
+
+<meta name="keywords"
+	content="Rahul Nadella, Rahul Nadella, statistics, machine-learning, data, science, python, blog, Bayesian" />
+
+<link rel="icon" type="image/png" href="static/Images/graph_icon.png" />
+
+<title>Rahul Nadella</title>
+
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js">
+	
+</script>
+
+
+
+<link rel="StyleSheet" href="static/Stylesheets/styler.css"
+	TYPE="text/css" MEDIA="screen" />
+
+<style type="text/css">
+body {
+	background: #F5F5F5;
+}
+</style>
+
+<script type="text/javascript"
+	src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	
+</script>
+
+<script type="text/x-mathjax-config">
+
+          MathJax.Hub.Config({
+
+            extensions: ["tex2jax.js"],
+
+            jax: ["input/TeX", "output/HTML-CSS"],
+
+            tex2jax: {
+
+              inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+
+              displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+
+              processEscapes: true
+
+            },
+
+            "HTML-CSS": { availableFonts: ["TeX"] }
+
+          });
+
+        </script>
+
+<script type="text/javascript" src="static/Scripts/paper.js"></script>
+
+<script type="text/paperscript" src="static/Scripts/subwayClasses.js"
+	canvas="subway"></script>
+
+
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+
+	_gaq.push([ '_setAccount', 'UA-33172909-1' ]);
+
+	_gaq.push([ '_trackPageview' ]);
+
+	(function() {
+
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl'
+				: 'http://www')
+				+ '.google-analytics.com/ga.js';
+
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+
+	})();
+</script>
+
+</head>
+
+<body>
+
+	<div id="content">
+
+		<div id="little-icons">
+
+			<a href="https://github.com/RahulNadella" target="_blank"><img
+				src="static/Images/github3.png" class="topicon" height /></a> <a
+				title="rahulnadella@yahoo.com" target="_blank"><img
+				src="static/Images/Mail.png" class="topicon" /></a> <a
+				href="https://twitter.com/rahulnadella" target="_blank"><img
+				src="static/Images/Twitter.png" class="topicon" /></a>
+
+		</div>
+
+		<div id="maincontent">
+
+			<div style="width: 865px" id="subwaycanvasdivWrap" class="canvasdiv">
+
+				<div id="subwaycanvasdiv" class="subwaycanvasHome canvasdiv">
+
+					<canvas id="subway" width="850" height="295"></canvas>
+
+					<hr id="border" />
+
+					<img style="display: none" id="legend"
+						src="static/Images/legendBlack.png" height=50 />
+
+				</div>
+
+			</div>
+
+			<!div id="content-buffer"> &nbsp <!/div>
+
+			<div class="page" id="Home">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/HomeGrey.png" /> Home
+						</span>
+					</h2>
+				</div>
+				<article class="textcontent">
+				<p class="indent">
+				<ol>
+					<li>Press and hold SHIFT and navigate the subway lines with
+						your arrow keys. If your L33T-gamer, you can also use your WASD
+						keys.</li>
+					<li>You can use your mouse to click on the different stations.
+					</li>
+				</ol>
+				You can also drag and drop the subway stations to create new maps.
+				</p>
+
+				<h3>Who am I?</h3>
+				<p class="indent">
+					My name is Rahul Nadella. I like to spend most of my time watching
+					movies, listening to music, reading books, working out,
+					programming, and playing videogames. <br> <br> If you
+					having any questions please feel free to contact me at <b>rahulnadella@yahoo.com</b>.
+				</p>
+				</article>
+			</div>
+
+
+			<div class="page" id="Projects">
+
+
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/SettingsGrey.png" /> Projects
+						</span>
+					</h2>
+				</div>
+				<article class="textcontent">
+				<h3 class="subtitle" id="pythora">Pythora</h3>
+				<p>
+					<a href="https://itunes.apple.com/us/app/pythora/id535251887?mt=8"
+						target="_blank">Pythora</a> is a Pill Remainder app that is
+					incredibly flexible and easy-to-use application. It is not only a
+					pill and refill reminder, but also a comprehensive personal
+					medication record (PMR) app for your iPhone. Medication management.
+					Use the Pill Reminder app to manage any combination of medications,
+					vitamins/supplements and birth control pills.
+				</p>
+				<hr />
+
+				<h3 class="subtitle" id="instareader">InstareaderRSS</h3>
+				<p>
+					The <a
+						href="https://itunes.apple.com/us/app/instareaderrss/id530271901?mt=8"
+						target="_blank">InstareaderRSS</a> application is a fast and
+					highly customizable news notifier that uses the third party API
+					(Google Reader API) in which you select some of your favorites
+					website, if they have RSS or Atom feeds and each time new
+					information arrives.
+				</p>
+				<hr />
+
+				<h3 class="subtitle" id="sunrise">Sunrise-Sunset Alarm Clock</h3>
+				<p>
+					The <a
+						href="https://itunes.apple.com/us/app/sunrise-sunset-alarm-clock/id574200416?mt=8"
+						target="_blank">Sunrise-Sunset Alarm Clock</a> provides the
+					ability to set the alarm based on when the sun will rise (or set).
+					The Sunrise-Sunset Alarm Clock gives you a simple user interface
+					that enables the user to be able to wake up at dawn, or the crack
+					of dawn, or before dawn without having to change the alarm clock
+					settings over the course of days, weeks, or even months.
+				</p>
+				<hr />
+
+				<h3 class="subtitle" id="this-site">rahulnadella.com</h3>
+				<p>
+					This <a href="http://rahulnadella.com"> site</a> is always a work
+					in progress. This is currently the second implementation of my
+					personal website, it uses a combination of HTML5, CSS3, and several
+					different javascript libraries (specifically jQuery).
+				</p>
+				<hr />
+
+				<h3 class="subtitle" id="github">Github</h3>
+				<p>
+					<a href="https://github.com/RahulNadella" target="_blank">GitHub</a>
+					is a web-based hosting service for software development projects
+					that use the Git revision control system. I currently have
+					contributed to several open source projects and will continue too
+					do.
+				</article>
+			</div>
+
+			<div class="page" id="Reviews">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/SettingsGrey.png" /> Reviews - (books, movies,
+							music, and videogames)
+						</span>
+					</h2>
+				</div>
+				
+				<p>
+					<a id="Contents">Table of Contents</a>
+				</p>
+				
+				<ol>
+					<li>Books:
+					<ol>
+					<li><a href="#Thousand">A Thousand Splendid Suns</a></li>
+					<li><a href="#Catcher">Catcher in the Rye</a></li>
+					<li><a href="#GoneGirl">Gone Girl</a></li>
+					<li><a href="#KiteRunner">Kite Runner</a></li>
+					<li><a href="#LastMan">Last Man</a></li>
+					<li><a href="#Bayesian">Probabilistic Programming and Bayesian Methods for Hackers</a></li>
+					<li><a href="#Jobs">Steve Jobs</a></li>
+					<li><a href="#Litigators">The Litigators</a></li>
+					<li><a href="#Secret">The Secret</a></li>
+					</ol>
+					</li>
+				</ol>
+				<hr />
+				
+				<article class="textcontent">
+
+				<h1 id="Thousand">A Thousand Splendid Suns</h1>
+				
+				<p>
+				I read many books in a year. Some I read for entertainment and others to increase my knowledge. Then there is the rare book that does both of those things, plus touches your heart as well. A Thousand Splendid Suns by Khaled Hosseini does just that. Hosseini's The Kite Runner was a magnificent book, and I enjoyed A Thousand Splendid Suns even more.
+				</p>
+				<p>
+				This is not a book for the timid, this is a melancholy story with four parts that eventually overlap. This emotional rollercoaster ride of a story covers the period from 1964 to roughly the present day in the hardluck country of Afghanistan. Splendid Suns follows the lives of two Afghani women, Mariam and Laila, as they move from children to adults. The book spans 30 years, beginning with the Soviet invasion and ending with the overthrow of the Taliban. It's difficult to explain more of the story without spoiling the plot, but these two women go from being enemies to unlikely friends. A Thousand Suns is a moving story about the power of love, the bonds of friendship, the love of country, and the struggle to survive. I hated to see it end.
+				</p>
+				<p>
+				I like books that teach me something, and there is a lot to learn in Splendid Suns. Previously, I didn't know much about the political turmoil in Afghanistan and the various factions vying for power. I knew women had an appalling time living under the Taliban regime, but I didn't realize how horrible conditions really were. The childbirth section will fill you with horror. I also learned of the natural beauty of Afghanistan and her fascinating history.
+				</p>
+				<p>
+				The book covers the issues of class, religion, work, education, sexual roles, & raising children. All are highlighted by the tumult of Afghanistan's history. This is a very descriptive, well written story, you can feel & sense the characters lives. The first half was a little slow, & it is clear that this will be a "blue journey." The sacrifices these two women gives the reader a slideshow of the harshness of their lives. Part three, is the peak of the story. This is where the two women's relationship truly meshed. The fourth part sees Afghanistan opening to modernity & is less traumatic. A very good & poignant read.
+				</p>
+				<p>
+				I was especially moved by Hesseini's eloquent writing and observations. In writing of friendship, "Boys, Laila came to see, treated friendship the way they treated the sun: its existence undisputed; its radiance best enjoyed, not beheld directly." There aren't too many writers who can produce back-to-back masterpieces. Khaled Hosseini is one of those rare talents who can pull off such a feat.
+				</p>
+				<hr />
+				
+				<h1 id="Catcher">Catcher in the Rye</h1>
+				<p>
+				It is difficult to remember what it was like to read this book for the first time. It is also difficult to imagine a book where each new reading provides so much more illumination into the main character and his personality. I can remember finding Catcher to be funny the first time I read it. Have you ever gotten fed up with the world? Have you ever just had enough of everybody's stupid, phony attitudes and this tainted game that we call life? You feel like you're all alone, there's no one that will listen to you, and the ones that do turn out to be perverts and phonies. Are they all crazy, or is it me?
+				</p>
+				<p>
+				In J.D. Salinger's brilliant coming-of-age novel, Holden Caulfield, a seventeen year old prep school adolescent relates his lonely, life-changing twenty-four hour stay in New York City as he experiences the phoniness of the adult world while attempting to deal with the death of his younger brother, an overwhelming compulsion to lie and troubling sexual experiences.
+				</p>
+				<p>
+				Salinger, whose characters are among the best and most developed in all of literature has captured the eternal angst of growing into adulthood in the person of Holden Caulfield. Anyone who has reached the age of sixteen will be able to identify with this unique and yet universal character, for Holden contains bits and pieces of all of us. It is for this very reason that The Catcher in the Rye has become one of the most beloved and enduring works in world literature.
+				</p>
+				<p>
+				As always, Salinger's writing is so brilliant, his characters so real, that he need not employ artifice of any kind. This is a study of the complex problems haunting all adolescents as they mature into adulthood and Salinger wisely chooses to keep his narrative and prose straightforward and simple.
+				</p>
+				<p>
+				This is not to say that The Catcher in the Rye is a straightforward and simple book. It is anything but. In it we are privy to Salinger's genius and originality in portraying universal problems in a unique manner. The Catcher in the Rye is a book that can be loved and understood on many different levels of comprehension and each reader who experiences it will come away with a fresh view of the world in which they live.
+				</p>
+				<p>
+				A work of true genius, images of a catcher in the rye are abundantly apparent throughout this book.
+				</p>
+				<p>
+				While analyzing the city raging about him, Holden's attention is captured by a child walking in the street "singing and humming." Realizing that the child is singing the familiar refrain, "If a body meet a body, comin' through the rye," Holden, himself, says that he feels "not so depressed."
+				</p>
+				<p>
+				The title's words, however, are more than just a pretty ditty that Holden happens to like. In the stroke of pure genius that is Salinger, himself, he wisely sums up the book's theme in its title.
+				</p>
+				<p>
+				When Holden, whose past has been traumatic, to say the least, is questioned by his younger sister, Phoebe, regarding what he would like to do when he gets older, Holden replies, "Anyway, I keep picturing all these little kids playing some game in this big field of rye and all. Thousands of little kids, and nobody's around--nobody big, I mean--except me. And I'm standing on the edge of some crazy cliff. What I have to do, I have to catch everybody if they start to go over the cliff--I mean if they're running and they don't look where they're going. I have to come out from somewhere and catch them. That's all I'd do all day. I'd just be the catcher in the rye and all. I know it's crazy, but that's the only thing I'd really like to be."
+				</p>
+				<p>
+				In this short bit of dialogue Salinger brilliantly exposes Holden's deepest desire and expounds the book's theme. Holden wishes to preserve something of childhood innocence that gets hopelessly lost as we grow into the crazy and phony world of adulthood.
+				</p>
+				<p>
+				The theme of lost innocence is deftly explored by Salinger throughout the book. Holden is appalled when he encounters profanity scrawled on the walls of Phoebe's school, a school that he envisions protecting and shielding children from the evils of society.
+				</p>
+				<p>
+				When Holden gives his red hunting cap to Phoebe to wear, he gives it to her as a shield, an emblem of the eternal love and protectiveness he feels for her.
+				</p>
+				<p>
+				Near the beginning of the book, Holden remembers a girl he once knew, Jane Gallagher, with whom he played checkers. Jane, he remembers, "wouldn't move any of her kings," and action Holden realizes to be a metaphor of her naivete. When Holden hears that his sexually experienced prep school roommate had a date with Jane, he immediately starts a fight with him, symbolically protecting Jane's innocence.
+				</p>
+				<p>				
+				More sophisticated readers might question the reasons behind Holden's plight. While Holden's feelings are universal, this character does seem to be a rather extreme example. The catalyst for Holden's desires is no doubt the death of his younger brother, Allie, a bright and loving boy who died of leukemia at the age of thirteen. Holden still feels the sting of Allie's death acutely, as well as his own, albeit undeserved, guilt, in being able to do nothing to prevent Allie's suffering.
+				</p>
+				<p>				
+				The only reminder Holden has of Allie's shining but all-too-short life, is Allie's baseball mitt which is covered with poems Allie read while standing in the outfield. In a particularly poignant moment, Holden tells us that this is the glove he would want to use to catch children when they fall from the cliff of innocence.
+				</p>
+				<p>				
+				In an interesting, but trademark, Salinger twist, Holden distorts the Robert Burns poem that provides the book's title. Originally, it read, "If a body meet a body, comin' through the rye." Holden distorts the word "meet" into "catch." This is certainly not the first time Holden is guilty of distortion; indeed he is a master at it.
+				</p>
+				<p>				
+				This distortion, however, shows us how much Allie's death has affected Holden and also how much he fears his own fall from innocence, the theme that threads its way throughout the whole of the book.
+				</p>
+				<p>
+				By this amazing book's end, we must reach the conclusion that there are times when we all need a "Catcher in the Rye." We are, indeed, blessed if we have one.
+				</p>
+				<hr />
+				
+				<h1 id="GoneGirl">Gone Girl</h1>
+				
+				<p>
+				In the first few pages of Gillian Flynn's new novel Gone Girl, I was thinking, "This is it -- one of those rare novels that's unique and totally engrossing, cleverly plotted so that each new development has me astounded and eager to find out what happens next." Then the story continued as Midwestern husband Nick began to deal with his wife Amy's sudden disappearance and some gradually revealed details that might cast doubt on his own innocence in the matter. During that time, the book dropped down from the level of extraordinary to merely somewhat intriguing. However, once I reached Part Two of Gone Girl ("Boy Meets Girl"), it was like Ms Flynn kicked it up a notch, and the book became amazing again. Without giving any spoilers, Part Two unveils some major plot twists that cast Amy's status in an entirely new light. From that point on, the story moves along in powder keg fashion: the fuse has been lit, and it's only a question of how long 'til the explosion, and how much damage will be done when it happens. Flynn has a distinctive writing style that really involved me in what was going on with her two main characters. I had previously purchased but not yet read her Sharp Objects (after several recommendations). Now I will have to read it, and also get her first book, Dark Places. Only one warning, though: Gone Girl contains a fair amount of foul language. This was not a problem for me, but it might be for some readers.
+				</p>
+				<hr />
+				
+				<h1 id="KiteRunner">Kite Runner</h1>
+				<p>
+				The earth turns and the wind blows and sometimes some marvelous scrap of paper is blown against the fence for us to find. And once found, we become aware there are places out there that are both foreign and familiar. Funny what the wind brings.
+				</p>
+				<p>
+				And now it brings "The Kite Runner," a beautiful novel by Afghan-American Khaled Hosseini that ranks among the best-written and provocative stories I have read in awhile.
+				</p>
+				<p>
+				Hosseini's first novel -- and the first Afghan novel to be written originally in English -- "The Kite Runner" tells a heartbreaking story of the unlikely friendship between Amir, the son of a wealthy Afghan businessman, and Hassan, the son of his father's servant. Amir is Sunni; Hassan is Shi'a. One is born to a privileged class; the other to a loathed minority. One to a father of enormous presence; the other to a crippled man. One is a voracious reader; the other illiterate.
+				</p>
+				<p>
+				The poor Hassan is born with a hare lip, but Amir's gaps are better hidden, deep inside.
+				</p>
+				<p>	
+				Yet Amir and Hassan live and play together, not simply as friends, but as brothers without mothers. Their intimate story traces across the expansive canvas of history, 40 years in Afghanistan's tragic evolution, like a kite under a gathering storm. The reader is blown from the last days of Kabul's monarchy -- salad days in which the boys lives' are occupied with school, welcome snows, American cowboy movies and neighborhood bullies -- into the atrocities of the Taliban, which turned the boys' green playing fields red with blood.
+				</p>
+				<p>
+				This unusually eloquent story is also about the fragile relationship fathers and sons, humans and their gods, men and their countries. Loyalty and blood are the ties that bind their stories into one of the most lyrical, moving and unexpected books of this year.
+				</p>
+				<p>
+				Hosseini's title refers to a traditional tournament for Afghan children in which kite-flyers compete by slicing through the strings of their opponents with their own razor-sharp, glass-encrusted strings. To be the child who wins the tournament by downing all the other kites -- and to be the "runner" who chases down the last losing kite as it flutters to earth -- is the greatest honor of all.
+				</p>
+				<p>
+				And in that metaphor of flyer and runner, Hosseini's story soars.
+				</p>
+				<p>
+				And fear not, gentle reader. This isn't a "foreign" book. Unlike Boris Pasternak's "Dr. Zhivago," Hosseini's narrative resonates with familiar rhythms and accessible ideas, all in prose that equals or exceeds the typical American story form. While exotic Afghan customs and Farsi words pop up occasionally, they are so well-defined for the reader that the book is enlightening and fascinating, not at all tedious.
+				</p>
+				<p>
+				Nor is it a dialectic on Islam. Amir's beloved father, Baba, is the son of a wise judge who enjoys his whiskey, television, and the perks of capitalism. A moderate in heart and mind, Hosseini has little good to say about Islamic extremism.
+				</p>
+				<p>
+				"The Kite Runner" is a song in a new key. Hosseini is an exhilaratingly original writer with a gift for irony and a gentle, perceptive heart. His canvas might be a place and time Americans are only beginning to understand, but he paints his art on the page, where it is intimate and poignant.
+				</p>
+				<hr />
+				
+				<h1 id="LastMan">Last Man</h1>
+				
+				<p>
+				A little over eight years ago, I was given a book by a coworker. He said, "This is way better than Tom Clancy." I was offended, not because I knew Clancy, but because I knew of him as an author that wrote great narrative blended with incredibly accurate, action-packed stories. My coworker was right. Vince Flynn is an excellent author. He has created a main character who is not afraid to have an opinion or take a stand. Flynn's series of books can be read in any order, and it's nothing short of a treat to discover the background of his characters when reading chronologically earlier titles.
+				</p>
+				<p>
+				Vince Flynn has written another title, The Last Man, which is as eerily prescient as his earlier Memorial Day. As I began to read the book I bought for my dad as a Christmas present, the news of an actual terrorist strike on the US Embassy in Libya hit the front page of every news site and newspaper.
+				</p>
+				<p>
+				Flynn's uncanny timing unfolds with his go-to main character, Mitch Rapp, as he is called on to rescue a missing CIA agent from a safe house in Afghanistan. While not exactly what was unveiled in actual world events, the author does capture the very real world of secret operatives working off the radar in hostile territories. Irene Kennedy, the only person able to reign in Rapp's destructive prowess, leaves the safety of her office to aid in the rescue mission. Mitch Rapp and his elite crew strike out to retrieve their target from the hands of the bad guys, while elements within the US and Afghan governments attempt to foil his efforts out of a need to hide their nefarious purposes.
+				</p>
+				<p>
+				Perhaps the idea is not entirely past its prime, but the idea of a kidnapped, US government official being rescued from terrorists is not a new theme in the recent fiction and non-fiction genres. Maybe this is bad timing on the part of the publisher, but the non-fiction No Easy Day, released a month ago contains the basic elements of The Last Man. David Crouch's fictional Act of Valor also has the same basic premise. If Vince Flynn was not the author, I wouldn't have read the book. Overall, I'm glad I did. It was enjoyable, but it's a title I wouldn't choose to read a second time.
+				</p>
+				<p>
+				The characters are believable, high-strung and thuggish, but believable. Flynn is also a master at retaining the basic humanity of his main character. Although Mitch Rapp is a Rambo-like tactical genius, he is still very much human. He can be hurt. His friends can be hurt. Few elements in the story are predictable, taking turns when least expected.
+				</p>
+				<p>
+				However, it struck me that the last few novels by the author don't contain the same edgy pace of previous books. The imagery is not as vivid, nor is the dialogue. And the basic story line has been done. The language is certainly military-grade, rough, tough and full of zingers, but strangely, it didn't really enhance the action as I expected.
+				</p>
+				<p>
+				I recommend the story for fans of the genre and of the author. I would also recommend this book if you want a good read where you know the good guy will win.
+				</p>
+				<p>
+				This story is definitely high quality when compared to other writers in the genre. Only when comparing Vince Flynn to himself do I find certain elements lacking. This is an excellent story, but it is not the best Mitch Rapp novel on my shelf.
+				</p>
+				<hr />
+				
+				<h1 id="Bayesian">Probabilistic Programming and Bayesian Methods for Hackers</h1>
+
+				<h3>
+					<em>Using Python and PyMC</em>
+				</h3>
+
+				<p>
+					Bayesian method is the natural approach to inference, yet it is
+					hidden from readers behind chapters of slow, mathematical analysis.
+					The typical text on Bayesian inference involves two to three
+					chapters on probability theory, then enters what Bayesian inference
+					is. Unfortunately, due to mathematical intractability of most
+					Bayesian models, the reader is only shown simple, artificial
+					examples. This can leave the user with a <em>so-what</em> feeling
+					about Bayesian inference. In fact, this was the author's own prior
+					opinion.
+				</p>
+
+				<p>After some recent success of Bayesian methods in
+					machine-learning competitions, I decided to investigate the subject
+					again. Even with my mathematical background, it took me three
+					straight-days of reading examples and trying to put the pieces
+					together to understand the methods. There was simplely not enough
+					literature bridging theory to practice. The problem with my
+					misunderstanding was the disconnect between Bayesian mathematics
+					and probabilistic programming. That being said, I suffered then so
+					the reader would not have to now. This book attempts to bridge the
+					gap.</p>
+
+				<p>If Bayesian inference is the destination, then mathematical
+					analysis is a particular path to it. On the other hand, computing
+					power is cheap enough that we can afford to take an alternate route
+					via probabilistic programming. The path is much more useful, as it
+					denies the necessity of mathematical intervention at each step,
+					that is, we remove often-intractable mathematical analysis as a
+					prerequisite to Bayesian inference. Simply put, this computational
+					path proceeds via small intermediate jumps from beginning to end,
+					where as the first path proceeds by enormous leaps, often landing
+					far away from our target. Furthermore, without a strong
+					mathematical background, the analysis required by the first path
+					cannot even take place.</p>
+
+				<p>
+					<em>Probabilistic Programming and Bayesian Methods for Hackers</em>
+					is designed as a introduction to Bayesian inference from a
+					computational/understanding-first, and mathematics-second, point of
+					view. Of course as an introductory book, we can only leave it at
+					that: an introductory book. For the mathematically trained, they
+					may cure their curiousity this text generates with other texts
+					designed with mathematical analysis in mind. For the enthusiast
+					with less mathematical-background, or one who is not interested in
+					the mathematics but simply the practice of Bayesian methods, this
+					text should be sufficient and entertaining.
+				</p>
+
+				<p>The choice of PyMC as the probabilistic programming language
+					is two-fold. As of this writing, there is currently no central
+					resource for examples and explanations in the PyMC universe. The
+					official documentation assumes prior knowledge of Bayesian
+					inference and probabilistic programming. We hope this book
+					encourages users at every level to look at PyMC. Secondly, with
+					recent core developments and popularity of the scientific stack in
+					Python, PyMC is likely to become a core component soon enough.</p>
+
+				<p>PyMC does have dependencies to run, namely NumPy and
+					(optionally) SciPy. To not limit the user, the examples in this
+					book will rely only on PyMC, NumPy and SciPy only.</p>
+
+				<h2>Examples from the book:</h2>
+
+				<ol>
+					<li>Infering human behaviour from SMS message rates, Chapter
+						1.</li>
+					<li>Solving the Price is Right Showdown, Chapter 5.</li>
+					<li>Implementing Kaggle winning solutions, Chapter 5.</li>
+					<li>Exploring Github's social datasets, Chapter 10.</li>
+					<li>Aerospace data, specifically the Challenger Spacecraft
+						explosion, Chapter 2.</li>
+					<li>Financial models wth non-linear payoffs, Chapter 5.</li>
+				</ol>
+				<hr />
+
+				<h1 id="Jobs">Steve Jobs</h1>
+				
+				<h3>Introduction</h3>
+				<p>
+				Apple has always meant more to me than as a computer company, because of my early experiences of using the Apple ][, //e, and later the Mac. They represented amazing products that I could understand even as a child, that this was the direction of the future. It was odd to me then, that the world was still embracing the MS-DOS command line interface and the IBM PC/AT machines. When in the late 1990's, Apple neared bankruptcy, with Microsoft Windows dominating the market, it taught me as a young man that companies that try to make the very best can be under appreciated by the masses, just as the adults near me in the early years could not see the amazing nature of my Apple //e and Mac back then. Good guys, it seemed, do finish last. It was disheartening.
+				</p>
+				<p>
+				Since the return of Steve Jobs to Apple, the world now knows of his genius and brilliance.
+				</p>
+				<p>
+				This biography is utterly amazing. I could not stop reading the entire biography and finished in less than 2 days.
+				</p>
+
+
+				<h3>What I Liked</h3>
+				1. Extraordinarily comprehensive - The book covers an immense number of different "phases" of his life from his famous adoption story to the start of Apple Computer, to NeXt, Pixar, love life, development of his iconic products, to the time before his death (although his death is actually never mentioned).
+				<br>
+				2. Ruthlessly objective - As a fan of Steve Jobs, I cringed at all the negative descriptions of Jobs's conduct with strangers, his management team, other CEO's, etc. I knew of his candor and lack of sensitivity towards others, but the degree to which this is depicted made me cringe and even wonder if Jobs should not be garnering so much world-wide respect. This sentiment was strong in the beginning of the biography, but by the end of the biography, I had actually become accustomed to Jobs's personality through the biography, almost as if I had personally known the man and adapted to him. The biography actually made me feel like I knew him.
+				<br>
+				3. Extraordinary historical perspective - Even if this biography were not to mention Steve Jobs, it would be fascinating. There is so much written about the history of Silicon Valley, other famous CEOs, musicians, artists, politicians, etc, that the book is enticing.
+				<br>
+				4. Extraordinary perspective on other famous leaders - Jobs spoke candidly about his opinions regarding virtually every important person that may have crossed his path. There are comments and stories regarding John Sculley, President Clinton, Obama, Bill Gates, Jeffrey Katzenberg (Disney), Michael Eisner (Disney), Bob Iger (Disney), Bono, Joan Baez, Bob Dylan, Yoko Ono, Steve Wozniak, Larry Ellison (Oracle), Eric Schmidt (Google), Larry Page (Google), Andy Grove (Intel), etc.
+				<br>
+				5. Extremely detailed descriptions of Jobs's business decision-making processes - This is true throughout the biography, but especially so towards the last third, where there is an extraordinarily detailed account by Jobs of his thought process during development of the iPod, iTunes, iPhone, iPad, and iCloud. In this latter third of the biography, whatever doubt may have existed of whether or not Jobs should be so revered is laid to rest when we witness his amazing decision-making ability.
+				<br>
+				6. Unexpectedly funny - Especially in the very beginning of the biography, you can't help but laugh when you read about John Sculley's first day at Apple and seeing Jobs sitting on a desk playing with his bare toes.
+				<br>
+				7. Jobs's personal life - This has always been an enigma and the most many knew of Jobs's personal life came from his 2005 Stanford commencement speech. We see into his early girlfriends' perspectives of Jobs, his current wife and children's perspective. The fascinating story of his biological parents, biological sister, daughter for whom he initially denied custody, three children and wife. There is much written about his perspective on Zen Buddhism and his trek to India.
+				<br>
+				8. Extremely detailed - For all the above points, there was an immense amount of detail that I never envisioned would exist in this biography.
+				<br>
+				9. Easy to read - The author makes reading each sentence effortless.
+				<br>
+				<br>
+
+				<h3>What I Didn't Like</h3>
+				1. Not enough photos - The few photos that were included were great, but it left you wanting more.
+				<br>
+				2. Possibly too much of the negative aspects of Jobs's personality were described - No doubt that the man could belittle others, but there was so much emphasis of this especially in the beginning of the bio, that I wondered if the author didn't try too hard to make this point for fear of being accused of being too soft in his description of Jobs
+				<br>
+				3. Some very slight repetition in the very beginning of the biography from passages found in the middle and end of the biography.
+				<br>
+				4. I wished for more of Steve Jobs's perspective - Every now and then, the author would mention what Jobs thought of a certain past event but I wish there were more of those. So much of the biography read more like a history book trying to be objective and accurate, but I really wanted to know what Jobs thought about everything. I wanted his perspective more, even if it would make the book less objective.
+				<br>
+				<br>
+
+				<h3>Conclusion</h3>
+				<p>
+				This biography is amazing because of the subject matter, but it is also well-written. It seemed to be such an effort at objectiveness, however, that it actually lacked what I wanted to read most, which was Jobs's perspective. I appreciated the author's efforts and painting an accurate historical picture, but I really wanted to know what was on Jobs's mind regarding everything that was written about him. There was not enough of that, which is unfortunate, because it is in my opinion, his perspective that mattered the most.
+				</p>
+				<hr />
+
+				<h1 id="Litigators">The Litigators</h1>
+
+				<p>
+				I have read many of John Grisham books and I have never been disappointed.  Some of my favorites have been the "Time to Kill", "Rainmaker", and "The Firm". Early on in Grisham's career, he wrote with fire. He went off against the ills of the legal and political systems, kicked greed between the legs, and did it all with some memorable, believable characters. His success was not surprising. Then, he stumbled. He lost the fire. I barely hung on through books like "The Brethren" and "The Broker." 
+				</p>
+				<p>
+				"The Litigators" is the first Grisham book I've had fun reading in a long time. I get the feeling he had fun writing this one. We meet grouchy Oscar Finley and plucky, unethical Wally Figg, partners at Finley & Figg. These are some humorous, annoying, even likable guys scraping to make a living through any client and situation possible. They're propped up a the tough secretary. They're bottom feeders. Along comes David Zinc, who can no longer stomach the hundred-hour work weeks at a legal firm where 600 other lawyers are employed. He goes off the rails, decides to check out one fine morning, and ends up drunk hours later on the steps at the ignoble Finley & Figg. Despite his recent bender, he's actually a guy who loves his wife, albeit not always well, and still retains some ethical and legal standards, since he's not yet stepped foot into a court or heard the way things go down between a rascally attorney and a leering judge.
+				</p>
+				<p>
+				With Finley & Figg adding Zinc to their recipe, the mixture bubbles over. Figg stumbles into a potentially huge torts lawsuit against a pharmaceutical manufacturer (while scraping for clients at a funeral home, no less), and he starts signing up other clients (ones who are alive, thank goodness). In his enthusiasm, he drags along Zinc and senior partner Finley, eventually landing their tiny firm in court against a formidable armada of attorneys.
+				</p>
+				<p>
+				Even though I was on vacation I whipped through the book in a couple of days.  I found the book contained some great characters, three-dimensional, likable, understandable, despicable, and everything in between. This is the Grisham I remember, one who was passionate, even fiery, but who also loved people and never forgot they were the driving force in his stories.  I enjoyed the book very much and would recommend it to a family member or friend.
+				</p>
+				<hr />
+				
+				<h1 id="Secret">The Secret</h1>
+				
+				<p>
+				I received "The Secret" for my 30th birthday from an aunt.  I read a couple of chapters when I got it but never finished the entire book.  I recently have picked the book up again and started reading it from the beginning.  "The Secret" book has sold several million copies worldwide.  The book has changed many people lives in a very positive way.
+				</p>
+				<p>
+				I think a book like this, which makes some really big claims, should, roughly, do the following:
+				</p>
+				<p>
+				1) Present it's premise clearly
+				<br>
+				2) Since it's a self-help book explain clearly what you need to do
+				<br>
+				3) Provide compelling evidence that it's ideas work
+				<br>
+				4) Be credible.
+				<br>
+				</p>
+				<p>
+				The book does a decent job of explaining its premise, which is that everything in your life is the result of the law of attraction. I quote, "the law of attraction says like attracts like, so when you think a thought, you are also attracting like thoughts to you." In other words, think good thoughts and good things will come to you and if you think bad thoughts then bad things come to you. I've simplified this a bit but not a whole lot as the concept isn't rocket science.
+				</p>
+				<p>
+				Now, does this book explain clearly what you need to do? Actually, for a self-help book it does a very poor job of this. How do you control your thoughts? What kinds of practices and thinking produce the best results? The author and contributors basically tell you a bunch of stories about how "so and so did something and you can too by changing your thinking".
+				</p>
+				<p>
+				And that's it for the "how to" part of the book. There isn't any.
+				</p>
+				<p>
+				Now, if I wanted to prove something worked from a scientific perspective it would seem to be easy to test this stuff out. You take two groups of people, teach one the secret, let the other go on with their lives and see what happens. In theory those that know the Secret would be happier and more successful than the control group. It might not be perfect but it'd be a whole lot better than what we get in this book. But, of course, you'd have to have an actual methodology to test.
+				</p>
+				<p>
+				Instead the authors cite numerous anecdotes of how the Secret worked. One person's cancer went away. Another individual walks after a brutal accident. Still another finds romance. That's all fine and perhaps it's evidence but it's not proof. Cancer can be misdiagnosed. How many people who were injured like the "Miracle Man" never walked again despite the best attitude and trying the approach perfectly? The problem with anecdotes is that it's easy to start with a result, work backward and assume the conclusion. It's also very easy with anecdotes to only present the ones that make your case and ignore those that don't (when someone dies of cancer while practicing the secret for instance). It's just not good enough to use anecdotes for large claims like those made in this book.
+				</p>
+				<p>
+				The following quote struck a nerve.
+				</p>
+				<p>
+				"People hold that for awhile, and they're really a champion at it. They say, `I'm fired up, I saw this program and I'm going to change my life.' And yet the results aren't showing. Beneath the surface it's just about ready to break through but the person will look just at the surface results and say, `This stuff doesn't work.' And you know what? The universe says, "your wish is my command,"
+				</p>
+				<p>
+				I thought it was interesting that the universe instantly manifest failure but isn't quite so fast with success. In fact, a cynical individual might conclude that what they are really saying is, "when this program works it's because the secret always works, but, on the off chance it doesn't work, well, that's your fault." An even more cynical person might think, "gosh, I wonder what would help a person who failed? Maybe, a seminar with Bob Proctor would be just the thing to get them over the top?"
+				</p>
+				<p>
+				Lastly, is the Secret credible? On the one hand, I think a lot can be said for the idea that if you change your thinking you'd change your life. In many ways that seems obvious to me.
+				</p>
+				<p>
+				On the other hand, if the secret actually was true, especially at the scope claimed by the book it would mean that everything that's happened is the result of your thinking. So, when a child dies of pneumonia, well, it's because they brought pneumonia into their lives. Michael J. Fox, not only did you bring Parkinson's into your life but change your thinking and it will go away. Obviously these things aren't true and they obliterate, in my opinion, any credibility in the book.
+				</p>
+				<p>
+				Not only does the book go too far but most (I'd argue nearly all) of the contributors aren't credible. On a topic of this scope: the ability to 100% change your life and the world in an incredible fashion, does anyone really think you couldn't find psychologists, top flight scientists, therapists and thousands of mainstream individuals to support it, if it worked? Wouldn't there be tons of research instead of anecdotes? Instead we get a Feng Shui Master, a chiropractor, motivational speakers (err trainers), a metaphysicist, etc. combined with a half dozen anecdotal stories. So the most powerful like changing idea ever and you get it from the crew in this book presented in this fashion? I don't think so!
+				</p>
+				<p>
+				If this idea really worked, at anything other than giving material to self-help speakers and generating repeat students, it just wouldn't be found here. The book wouldn't even have to be written because we'd all already know it and be practicing it. Remember, this is not a new idea, it's been around for a very long time, and it's been the topic of literally thousands of seminars and hundreds of books.
+				</p>
+				<p>
+				In conclusion, I'm not opposed to the idea on a small scale but this book just goes way too far and I'm left with the feeling that all that's really going on is a bunch of people trying to get their name out and get you to pay for their seminars.
+				</p>
+				
+				</article>
+				
+				<p>
+					<a href="#Contents">Back to Top</a>
+				</p>
+			</div>
+
+			<div class="page" id="Research">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/DataGrey.png" /> Research
+						</span>
+					</h2>
+				</div>
+				
+				<article>
+					<h2><center><b><u> Under Construction </u></b></center></h2>
+					<p><center>This page is under construction. Please come back soon!</center></p>
+				</article>
+			</div>
+
+			<div class="page" id="Blogs">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/MessagesGrey.png" /> Blogs
+						</span>
+					</h2>
+				</div>
+
+				<article>
+					<h2><center><b><u> Under Construction </u></b></center></h2>
+					<p><center>This page is under construction. Please come back soon!</center></p>
+				</article>
+			</div>
+
+			<div class="page" id="Coding">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/MessageGrey.png" /> Coding
+						</span>
+					</h2>
+				</div>
+
+				<p>
+					<a id="Contents">Table of Contents</a>
+				</p>
+				
+				<ul>
+					<li><a href="#CMTime">Understanding CMTime</a></li>
+				</ul>
+				<hr />
+
+				<article>
+				<h2 id="CMTime">
+					<a href="/understanding-cmtime">Understanding CMTime</a>
+				</h2>
+				<p>
+					The
+					<code>CMTimeMakeWithSeconds</code>
+					function (part of the Core Media framework in iOS and Mac OS X)
+					behaves in very odd ways. This post is my attempt to explain the
+					purpose of the
+					<code>CMTime</code>
+					structure, and how to work with the sometimes-confusing functions
+					used to create and manipulate time objects.
+				</p>
+				<div id="a-precise-perspective-on-time">
+					<h3>A precise perspective on time</h3>
+					<p>Most people never need to think very precisely about time.
+						To take an extreme case, maybe you're an Olympic runner who cares
+						about a difference of milliseconds between your speed and the
+						world record in the 100m dash. That's about as far as it goes.
+						When it comes to timed media, however, we often care about very
+						short increments of time (tens of microseconds) and sometimes very
+						long durations (days or weeks).</p>
+					<p>
+						Suppose we want to precisely specify a moment in a movie file,
+						like 35:06. A naïve approach would be to represent time as some
+						double-precision floating-point quantity, like this:
+						<code>NSTimeInterval t = 2106.0;</code>
+						. This is actually fine for most uses, but it breaks down when we
+						care about very long stretches of time divided up into very small
+						slices. Without going into the mechanics of floating-point
+						formats, such a
+						<code>double</code>
+						can hold roughly 16 (decimal) significant digits in 8 bytes (On
+						all of the platforms I currently care about,
+						<code>sizeof(NSTimeInterval) == sizeof(Float64) ==
+							sizeof(double) == 8</code>
+						).
+					</p>
+					<p>Floating-point numbers suffer one big problem: repeated
+						operations (addition, multiplication, etc.) cause the accumulation
+						of imprecision which can result in noticeable divergences after a
+						long period of time, potentially causing errors in synchronizing
+						multiple media streams.</p>
+					<p>As a quick example, summing up one million terms of 0.000001
+						results in a value of about 1.0000000000079181. The error is
+						caused by the fact that 1e-6 cannot be exactly represented in the
+						floating-point format we use, so we instead use a binary
+						approximation that differs in its less-significant bits. This
+						error is not that big, but if you're running an HTTP streaming
+						server, you might be accumulating this imprecision several
+						thousand times per second for an indefinite period of time.</p>
+					<p>This motivates us to find a way to represent time more
+						precisely, by doing away with floating-point representations and
+						their inherent imprecision (to say nothing of their hard-coded
+						rounding behaviors).</p>
+				</div>
+				<div id="time-as-a-rational-number">
+					<h3>Time as a rational number</h3>
+					<p>
+						There have been plenty of data structures used by Apple to
+						represent time on the Mac and iOS platforms. With the introduction
+						of iOS 4 and Mac OS X 10.7, a couple more were added:
+						<code>CMTime</code>
+						and
+						<code>CMTimeRange</code>
+						. Once you understand the former, the latter is pretty
+						self-explanatory, so I won't spend any time discussing it here.
+					</p>
+					<p>
+						<code>CMTime</code>
+						is really nothing more than a C struct with four members. It looks
+						like this:
+					</p>
+					<pre>
+			<code>
+			typedef struct
+			{
+   				CMTimeValue    value;
+   				CMTimeScale    timescale;
+   				CMTimeFlags    flags;
+   				CMTimeEpoch    epoch;
+			} CMTime;
+			</code>
+		</pre>
+					<p>
+						The remainder of this section will focus on
+						<code>value</code>
+						and
+						<code>timescale</code>
+						, but
+						<code>flags</code>
+						can take on some important values that will also merit a mention
+						later. Various values of
+						<code>flags</code>
+						allow us to indicate that a timestamp is postive or negative
+						infinity, or if it has been rounded as a result of some
+						intermediate calculation. In this way, the struct is much more
+						expressive than a single floating-point quantity could ever be,
+						and this has numerous advantages.
+					</p>
+					<p>
+						Let us consider how time is actually expressed by the
+						<code>CMTime</code>
+						struct. It's very important to realize that
+						<code>value</code>
+						and
+						<code>timescale</code>
+						are both stored as integers: 64 bits and 32 bits respectively. It
+						should be obvious from the previous discussion, but the reason
+						<code>value</code>
+						is stored as an integral value is to avoid the errors of the type
+						we saw in the floating-point example. Also, by allocating an
+						entire 64 bits to the denominator, we can represent 9 billion
+						billion distinct positive values, up to 19 decimal digits, with no
+						ambiguity, for each possible
+						<code>timescale</code>
+						value.
+					</p>
+					<p>
+						And what of the
+						<code>timescale</code>
+						value? It represents the number of &quot;slices&quot; each second
+						is divided into. This matters because the precision of the CMTime
+						object as a whole is limited by this quantity. For example, if
+						<code>timescale</code>
+						is 1, no timestamp smaller than 1 second can be represented by the
+						object, and timestamps go in increments of one second. Similarly,
+						if
+						<code>timescale</code>
+						is 1000, each second is subdivided into 1000 pieces, and the
+						<code>value</code>
+						member represents the number of milliseconds we want to signify.
+					</p>
+					<p>
+						How do you choose a sensible timescale to make sure you don't get
+						truncated? Apple recommends a timescale of 600 for video, with the
+						explanation that 600 is a multiple of the common video framerates
+						(24, 25, and 30 FPS). You might want to crank this up to 60,000 or
+						higher if you need sample-exact indexing on audio files. What's
+						nice about those 64 bits in
+						<code>value</code>
+						is that you can still represent up to 5.8 million years in
+						increments of 1/60,000th of a second unambiguously in this way.
+					</p>
+					<p>
+						The number of seconds represented by a timestamp is simply
+						<code>t.value / t.timescale</code>
+						. You can use the
+						<code>CMTimeGetSeconds</code>
+						function to easily transform a
+						<code>CMTime</code>
+						into a
+						<code>Float64</code>
+						in a way that maintains as much precision as possible.
+					</p>
+				</div>
+				<div id="not-so-convenient-convenience-methods">
+					<h3>Not-so-convenient convenience methods</h3>
+					<p>
+						<code>CMTimeGetSeconds</code>
+						may be a friendly and useful method, but its evil twin,
+						<code>CMTimeMakeWithSeconds</code>
+						is anything but friendly to newcomers. Here's its signature:
+					</p>
+					<pre>
+			<code>
+			CMTime CMTimeMakeWithSeconds 
+			(
+   				Float64 seconds,
+   				int32_t preferredTimeScale
+			);
+		</code>
+		</pre>
+					<p>
+						The first couple of times I used this function, I could not make
+						it do what I wanted. Now that we've gone through all the internals
+						of
+						<code>CMTime</code>
+						, I hope it will be obvious to you where I went astray. I was
+						trying to represent a quantity of 0.5 seconds, so I could get
+						periodic callbacks from an
+						<code>AVPlayer</code>
+						object that was streaming an MP3. I tried to do this:
+					</p>
+					<pre>
+			<code>
+			CMTime interval = CMTimeMakeWithSeconds(0.5, 1);
+			</code>
+		</pre>
+					<p>
+						If you've followed along so far, you already know that
+						<code>interval</code>
+						actually represents 0, not 0.5. It doesn't make sense to ask for a
+						quantity that represents one-half on a number line consisting only
+						of whole numbers, but that's exactly what we're asking for here.
+						Our value gets truncated (rounded toward zero) because our
+						timescale isn't precise enough to represent it.
+					</p>
+					<p>
+						The Core Media API includes a full complement of functions for
+						constructing, comparing, and performing arithmetic on
+						<code>CMTime</code>
+						. Although performing arithmetic operations on
+						<code>CMTime</code>
+						using these functions is verbose, it is essential to use them if
+						you want to retain precision and integrity. Each of these
+						functions performs special overflow checks and rounding and will
+						set the appropriate flags on the
+						<code>CMTime</code>
+						objects when the need arises.
+					</p>
+					<p>
+						To add two
+						<code>CMTimes</code>
+						, use the function
+						<code>CMTimeAdd</code>
+						. To compare two times, use
+						<code>CMTimeCompare</code>
+						(the return value of this function follows the convention of
+						comparator functions as used by the C standard library method
+						<code>qsort</code>
+						). To find the larger of two times, use
+						<code>CMTimeMaximum</code>
+						. Read the documentation for plenty of others; this set of
+						functions is quite comprehensive.
+					</p>
+				</div>
+				<div id="indefinites-and-infinities:-set-your-freak-flag-high">
+					<h3>Indefinites and infinities: set your freak flag high</h3>
+					<p>
+						The final topic relating to
+						<code>CMTime</code>
+						is the representation of infinities, indefinite values, and
+						rounding. An &quot;indefinite&quot; time is one whose value is
+						unknown. You might receive such a timestamp from an object if you
+						ask for its elapsed time before it's been initialized. The
+						<code>flags</code>
+						value can be checked for each of the following to determine if any
+						of these exceptional situations applies:
+					</p>
+					<ul>
+						<li><code>kCMTimeFlags_PositiveInfinity</code></li>
+						<li><code>kCMTimeFlags_NegativeInfinity</code></li>
+						<li><code>kCMTimeFlags_Indefinite</code></li>
+					</ul>
+					<p>Since bitwise OR'ing doesn't appeal to most people, there
+						are useful macros for inferring the presence of these flags.
+						Respectively:</p>
+					<ul>
+						<li><code>CMTIME_IS_POSITIVE_INFINITY</code></li>
+						<li><code>CMTIME_IS_NEGATIVE_INFINITY</code></li>
+						<li><code>CMTIME_IS_INDEFINITE</code></li>
+					</ul>
+					<p>
+						Helpfully, these macros also ensure that the timestamp in question
+						is, in fact, valid. They evaluate to
+						<code>NO</code>
+						if the timestamp isn't valid in the first place.
+					</p>
+					<p>Also, here's a laundry list of how comparisons amongst
+						different categories of times work: Invalid times are considered
+						to be equal to other invalid times, and greater than any other
+						time. Positive infinity is considered to be less than any invalid
+						time, equal to itself, and greater than any other time. An
+						indefinite time is considered to be less than any invalid time,
+						less than positive infinity, equal to itself, and greater than any
+						other time. Negative infinity is considered to be equal to itself,
+						and less than any other time. Now you know.</p>
+				</div>
+				<div id="applications">
+					<h3>Applications</h3>
+					<p>
+						I've run out of space for describing where you'll actually be
+						using CMTime objects. But, the odds are pretty good that if you're
+						reading this, you already have a pretty good idea what you want to
+						do with them. AVFoundation objects such as
+						<code>AVPlayer</code>
+						and
+						<code>AVAssetReader</code>
+						use
+						<code>CMTime</code>
+						to talk about time, and there's plenty more where that came from.
+					</p>
+					<p>If you have suggestions or corrections that would improve
+						this post, please email me. I want this post to be everything I
+						would have hoped for back when I was grappling with this stuff for
+						the first time, so your perspective matters to me.</p>
+					<div id="translations">
+						<h4>Translations</h4>
+						<p>
+							This article has been translated into Russian by Victor
+							Grushevskiy: <a href="http://habrahabr.ru/post/173897/"> О
+								применении CMTime</a>. Thanks for the translation, Victor!
+						</p>
+					</div>
+				</div>
+
+				</article>
+			</div>
+
+			<div class="page" id="AdditionalLinks">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/MessagesGrey.png" /> Additional Links
+						</span>
+					</h2>
+				</div>
+				<article class="textcontent">
+				<h3 class="subtitle" id="additionallinks">Links</h3>
+				<p>
+					<a href="http://www.anandtech.com/" target="_blank">AnandTech</a> <br>
+					<a href="http://www.apache.org/" target="_blank">Apache</a> <br>
+					<a href="http://developer.android.com/index.html" target="_blank">Android
+						Developer</a> <br> <a
+						href="https://developer.apple.com/devcenter/ios/index.action"
+						target="_blank">Apple Developer</a> <br> <a
+						href="http://www.bignerdranch.com/index" target="_blank">Big
+						Nerd Ranch</a> <br> <a href="http://www.bloomberg.com/"
+						target="_blank">Bloomberg</a> <br> <a
+						href="http://www.bbc.co.uk/" target="_blank">BBC</a> <br> <a
+						href="http://www.cnet.com/" target="_blank">CNET</a> <br> <a
+						href="http://www.cnbc.com/" target="_blank">CNBC</a> <br> <a
+						href="http://www.danpatrick.com/" target="_blank">Dan Patrick</a>
+					<br> <a href="http://www.engadget.com/" target="_blank">Engadget</a>
+					<br> <a href="http://www.fastcompany.com/" target="_blank">Fast
+						Company</a> <br> <a href="http://www.gameinformer.com/"
+						target="_blank">Game Informer</a> <br> <a
+						href="http://gizmodo.com/" target="_blank">Gizmodo</a> <br> <a
+						href="http://www.ieee.org/index.html" target="_blank">IEEE</a> <br>
+					<a href="http://www.ign.com/" target="_blank">IGN</a> <br> <a
+						href="http://jquery.com/" target="_blank">jQuery</a> <br> <a
+						href="http://www.marketwatch.com/" target="_blank">MarketWatch</a>
+					<br> <a href="http://www.npr.org/" target="_blank">NPR</a> <br>
+					<a href="http://www.popsci.com/" target="_blank">Popular
+						Science</a> <br> <a href="http://www.safaribooksonline.com/"
+						target="_blank">Safari Books</a> <br> <a
+						href="http://slashdot.org/" target="_blank">Slashdot</a> <br>
+					<a href="http://www.tdameritrade.com/" target="_blank">TD
+						Ameritrade</a> <br> <a href="http://www.techoftomorrow.com/"
+						target="_blank">Tech of Tomorrow</a> <br> <a
+						href="http://javaposse.com/" target="_blank">The Java Posse</a> <br>
+					<a href="http://www.nytimes.com/" target="_blank">The New York
+						Times</a> <br> <a href="http://www.thestreet.com/"
+						target="_blank">The Street</a> <br> <a
+						href="http://www.wired.com/" target="_blank">Wired</a> <br> <a
+						href="http://www.zdnet.com/" target="_blank">ZDNet</a> <br>
+				</p>
+				<hr />
+				</article>
+			</div>
+
+			<div class="page" id="Resume" style="width: 850">
+				<div id="_resume">
+
+					<style>
+#_resume p {
+	margin-top: 8;
+	line-height: 1.25;
+}
+
+#_resume h1 {
+	margin: 30 0;
+	text-align: center;
+	font-size: 2.5em;
+}
+
+#_resume h4 {
+	margin: 5 0 0 0;
+}
+
+#_resume h3 {
+	font-family:;
+}
+
+#_resume #wrapper {
+	margin: auto auto;
+}
+
+#_resume #main-body {
+	margin: 50px auto;
+	font-family: "Computer Modern", Helvetica;
+	font-size: 14pt;
+}
+
+#_resume div#header-links {
+	text-align: center;
+}
+
+#_resume div.element {
+	padding: 15px;
+	margin: 10 0;
+}
+
+#_resume .indent {
+	text-indent: 20pt
+}
+
+#_resume div#header-links ol li {
+	margin: 0 20px 20px 0;
+	vertical-align: top
+}
+
+#_resume div#header-links ul li {
+	margin: 0 20px 20px 0;
+	vertical-align: top
+}
+
+#_resume ol {
+	list-style-type: None;
+}
+
+#_resume ol.show {
+	list-style-type: upper-roman;
+}
+
+#_resume ol.show li {
+	margin: 10 10px 10px 10;
+	vertical-align: top
+}
+
+#_resume a {
+	text-decoration: None;
+	color: inherit;
+}
+
+#_resume a:hover {
+	text-decoration: underline;
+	cursor: pointer
+}
+</style>
+
+					<div id="wrapper">
+						<p style="margin: 3">
+							<a href="/RahulNadella_Resume.doc" target='_blank' title="Printable Version">Printable Version</a>
+						</p>
+						<div id="main-body">
+
+							<div class="element">
+								<h1>Rahul Nadella</h1>
+
+								<div id="header-links">
+									<ol>
+										<li><a href="#r-programming">Altruistic Programmer</a>
+										<li><a href="#r-work">Broad Experience</a>
+										<li><a href="#r-me">Contact: rahulnadella@yahoo.com</a>
+									</ol>
+								</div>
+							</div>
+							<div id="r-programming" class="element">
+								<h2>Altruistic Programmer</h2>
+								<p class="indent">Specifically, I love to code. More
+									specifically, I love to code tools that make my life, or
+									others' lives, easier/more interesting/happier, especially when
+									the original task is not even possible for humans. I'm an
+									advocate for open source technologies and tools like GitHub
+									(that make open source cool).</p>
+								<p>The langauges and tools I am most familiar with are:</p>
+								<ol>
+									<li>
+										<h4>Java</h4>
+										<p>I've been coding in Java for 8 years, and consider
+											myself a Java enthusiast. I am very experienced in the many
+											sides of Java: i) core libraries, ii) web technologies, and
+											iii) as the server's glue.
+									<li>
+										<h4>Objective-C</h4>
+										<p>I've been coding in Objective-C for 4 years. I have
+											built several apps using the various iOS frameworks (iOS 4,
+											5, 6, 7). I currently have 3 apps active in the iTunes store.
+										
+									<li>
+										<h4>Javascript (including jQuery and data vis. libraries)</h4>
+										<p>
+											My personal websites's subway system, <b><a
+												href="http://rahulnadella.com">http://rahulnadella.com</a></b>
+											is written in Javascript, and so are a few other projects I
+											have worked on. I like Javascript.
+										</p>
+									</li>
+									<li>
+										<h4>Linux and Windows enviroments</h4>
+										<p>
+											I'm comfortable with both, and can transition between the two
+											quickly (though I <em>really</em> prefer Linux.)
+									<li>
+										<h4>Oracle, PostgreSQL, MySQL, SQL Server, SPARQL, and
+											MongoDB</h4>
+										<p>I have extensive experience (around 10 years) with
+											relational databases.
+									</li>
+									<li>
+										<h4>Android, C/C++, Clearcase, Drools, Git, Hibernate,
+											HTML(5)/CSS, JBoss, Perl, Python, Subversion, Struts, Tomcat</h4>
+										<p>all tools I use to get the job done.
+								</ol>
+								<p>
+									<br />I'm on GitHub at <a
+										href="https://github.com/RahulNadella"><u>Rahul
+											Nadella</u></a>.
+								<p>
+							</div>
+
+							<div class="element" id="r-work">
+								<h2>Broad Experience</h2>
+								<p>Aside from the open source and one-the-side projects,
+									below is my more formal experience. Starting from the most
+									recent:</p>
+								<ol class="show">
+									<li>
+										<h4>iOS Developer</h4>
+										<p>
+											<i>December 2010 - current: </i> I have developed several
+											apps and have currently 3 apps on the iTunes store.
+										</p>
+										<ul>
+											<li><a
+												href="https://itunes.apple.com/us/app/pythora/id535251887?mt=8"
+												target="_blank">Pythora</a> is pill reminder app. Uses
+												AddressBook, AudioToolbox, AVFoundation, CFNetwork,
+												CoreData, CoreGraphics, Foundation, MessageUI, QuartzCore,
+												SystemConfigruation, and UIKit. The applications uses the
+												following concepts: custom fonts, custom cells, iCloud,
+												local notifications, and XML parsing.
+											<li><a
+												href="https://itunes.apple.com/us/app/instareaderrss/id530271901?mt=8"
+												target="_blank">InstareaderRSS</a> is a RSS Reader app. This
+												applications uses AddressBook, CFNetwork, CoreData,
+												CoreGraphics, Foundation, GDataXML, MessageUI,
+												MobileCoreServices, Social (Facebook and Twitter),
+												SystemConfiguration, and UIKit. The following concepts have
+												been implemented in the application: caching protocol,
+												custom fonts, custom cells, JSON Loader, and REST api.
+											<li><a
+												href="https://itunes.apple.com/us/app/sunrise-sunset-alarm-clock/id574200416?mt=8"
+												target="_blank">Sunrise-Sunset Alarm Clock</a> is an unusual
+												alarm clock app. Uses Location Manager, Yahoo Weather API,
+												XML parsing, Local Notifications, AV Foundation, custom
+												fonts, astronomy math. The hard part was dealing with
+												multiple simultaneous asynchronous data inputs to the app.
+										</ul>
+									<li>
+										<h4>Lockheed Martin - Senior Software Engineer</h4>
+										<p>
+											<i>January 2005 - July 2012: </i> The majority of time I
+											worked on developing several information systems.
+										</p>
+
+										<ul>
+											<li>Focused on ORM (Object Relational Mapping) tools and
+												development of generic APIs to reduce development time for
+												logistical applications while improving performance at the
+												data layer. I have also architected solutions around the
+												Drools 5 framework. One aspect of my research was looking at
+												Drools to provide autonomic capabilities through the use of
+												complex event processing (CEP), event stream processing
+												(ESP), and workflows. I also have experience with the
+												development of knowledge bases for processing business
+												rules.
+												</p>
+											<li>Most of my work has been with Oracle databases as
+												the underlying datastore, but I have also utilized Microsoft
+												SQL, postgres and mysql as well as hsqldb for embedded
+												databases internal to datamigration tasks. I have extensive
+												experience in using constraints, views, triggers, stored
+												procedures, and batch jobs.
+											<li>I have engineered web applications using the Struts
+												framework.
+											<li>I have extensively developed api for data
+												loading/migration using different release builds on multiple
+												database versions.
+											<li>I am strong believer in abstraction and
+												architecting/developing loosely-coupled applications.
+										</ul>
+
+										<ol>
+											<li>Tools: Ajax, Apache POI, Clearcase, Drools,
+												Hibernate, Java, Javascript, MySQL, PostgreSQL, Python,
+												SPARQL, Oracle
+										</ol>
+									<li>
+										<h4>Lockheed Martin - Summer Intern</h4>
+										<p>
+											<i>May 2003 - August 2003: </i> I spent most of the time in
+											research and development.
+										</p>
+										<ul>
+											<li>Extensive work (IRAD) on the Homeland Security
+												Project using a Common Development Framework (CDF)
+												Implemented the Backup Crisis Information Management System
+												(CIMS) using Java (J2EE), XML, XML Schemas, DTD, XHTML,
+												JavaScript, Oracle XML DB
+										</ul>
+									<li>
+										<h4>Department of Energy - Co-op Student</h4>
+										<p>
+											<i>May 2001 - December 2002: </i>
+										</p>
+										<ul>
+											<li>Developed Knowledge Management System for Security &
+												Process Systems Group using Software Engineering Company
+												Guidelines (Requirements and Design Document) and
+												implementing using Java (J2EE, Tomcat Server, Sun ONE, SQL
+												Server) Updated Design Documents and designed digital
+												circuits for upgrade of on-site facility using AutoCAD
+											<li>Extensive Visual Basic Programming and Windows API
+												by creating Microsoft Access Database
+											<li>Designed a C Program for a Programmable Logic
+												Controller
+										</ul>
+									<li>
+										<h4>University of Pittsburgh - Student</h4>
+										<p>
+											<i>August 1999 - December 2004: </i> Bachelor of Science in
+											Computer Engineering
+										</p>
+								</ol>
+
+							</div>
+
+							<div class="element" id="r-me">
+								<h2>Contact me</h2>
+								<p>
+									I am a very pleasant and excited person to be around. I like
+									dogs, biking, hiking, and diet coke. I <i>love</i> science,
+									programming, and making people unexpectedly happy. As a student
+									of evolution, I am constantly trying new experiments. Most
+									fail, but then they don't.
+								</p>
+
+								<p>
+									I can be reached at <b>rahulnadella@yahoo.com</b>. Thanks for
+									taking the time to consider me ;)
+								</p>
+							</div>
+
+
+							<br /> <br /> <br /> <br />
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="page" id="OrganTransplantation">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/organ_donation.png" /> Organ Transplantation
+						</span>
+					</h2>
+				</div>
+
+				<article class="textcontent">
+				<h3 class="subtitle" id="organtransplant">Introduction</h3>
+				<p>I found out early in my life that I suffer from kidney
+					disease called Medullary cystic disease. There is no cure to the
+					disease I have and the only options available were dialysis or
+					kidney transplant. I had to be on Hemodialysis for about 6 months
+					but I was fortunate to receive a living donor kidney transplant
+					when I was 18 on November 21, 1998. My dad was close match to me
+					and he was able to give me one of his kidneys. The kidney lasted
+					for about 12 years but unfortunately I had to start dialysis again.
+					This time around I decided on Peritoneal Dialysis and have been on
+					it for around 2.5 years. I am currently on multiple transplant
+					lists but the current wait period varies between the different
+					regions based on blood type in the United States.
+				</p>
+				<p>
+				   Good news, I was lucky to received a kidney transplant on June 9, 2014. 
+				   The kidney was a very good match based on my antibodies and I was able 
+				   to have it done at the same hospital and by the same surgeon that I received 
+				   my first transplant. I am currently in good health and feeling great.
+				</p>
+				<hr />
+				</article>
+				<article class="textcontent">
+				<h3 class="subtitle" id="organtransplant">Description</h3>
+				<p>
+					Organ transplantation is the moving of an organ from one body to
+					another or from a donor site to another location on the patient's
+					own body, for the purpose of replacing the recipient's damaged or
+					absent organ. The emerging field of regenerative medicine is
+					allowing scientists and engineers to create organs to be re-grown
+					from the patient's own cells (stem cells, or cells extracted from
+					the failing organs). Organs and/or tissues that are transplanted
+					within the same person's body are called autografts. Transplants
+					that are recently performed between two subjects of the same
+					species are called allografts. Allografts can either be from a
+					living or cadaveric source. <br> <br> Organs that can be
+					transplanted are the heart, kidneys, liver, lungs, pancreas,
+					intestine, and thymus. Tissues include bones, tendons (both
+					referred to as musculoskeletal grafts), cornea, skin, heart valves,
+					nerves and veins. Worldwide, the kidneys are the most commonly
+					transplanted organs, followed by the liver and then the heart. The
+					cornea and musculoskeletal grafts are the most commonly
+					transplanted tissues; these outnumber organ transplants by more
+					than tenfold. <br> <br> Organ donors may be living, brain
+					dead, or dead via circulatory death. Tissue may be recovered from
+					donors who die of circulatory death, as well as of brain death – up
+					to 24 hours past the cessation of heartbeat. Unlike organs, most
+					tissues (with the exception of corneas) can be preserved and stored
+					for up to five years, meaning they can be "banked". Transplantation
+					raises a number of bioethical issues, including the definition of
+					death, when and how consent should be given for an organ to be
+					transplanted and payment for organs for transplantation. Other
+					ethical issues include transplantation tourism and more broadly the
+					socio-economic context in which organ procurement or
+					transplantation may occur. A particular problem is organ
+					trafficking. Some organs, such as the brain, cannot be
+					transplanted. <br> <br> Transplantation medicine is one
+					of the most challenging and complex areas of modern medicine. Some
+					of the key areas for medical management are the problems of
+					transplant rejection, during which the body has an immune response
+					to the transplanted organ, possibly leading to transplant failure
+					and the need to immediately remove the organ from the recipient.
+					When possible, transplant rejection can be reduced through
+					serotyping to determine the most appropriate donor-recipient match
+					and through the use of immunosuppressant drugs.
+				</p>
+				<hr />
+				</article>
+				<article class="textcontent">
+				<h3 class="subtitle" id="organtransplant">Types of Donor</h3>
+				<p>
+					Organ donors may be living, or may have died of brain death or
+					circulatory death. Most deceased donors are those who have been
+					pronounced brain dead. Brain dead means the cessation of brain
+					function, typically after receiving an injury (either traumatic or
+					pathological) to the brain, or otherwise cutting off blood
+					circulation to the brain (drowning, sufficiation, etc.). Breathing
+					is maintained via artificial sources, which, in turn, maintains
+					heartbeat. Once brain death has been declared the person can be
+					considered for organ donation. Criteria for brain death vary.
+					Because less than 3% of all deaths in the U.S. are the result of
+					brain death, the overwhelming majority of deaths are ineligible for
+					organ donation, resulting in severe shortages. <br> <br>
+					Organ donation is possible after cardiac death in some situations,
+					primarily when the patient is severely brain injured and not
+					expected to survive without artificial breathing and mechanical
+					support. Independent of any decision to donate, a patient's
+					next-of-kin may decide to end artificial support. If the patient is
+					expected to expire within a short period of time after support is
+					withdrawn, arrangements can be made to withdraw that support in an
+					operating room to allow quick recovery of the organs after
+					circulatory death has occurred. <br> <br> Tissue may be
+					recovered from donors who die of either brain or circulatory death.
+					In general, tissues may be recovered from donors up to 24 hours
+					past the cessation of heartbeat. In contrast to organs, most
+					tissues (with the exception of corneas) can be preserved and stored
+					for up to five years, meaning they can be "banked." Also, more than
+					60 grafts may be obtained from a single tissue donor. Because of
+					these three factors—the ability to recover from a non-heart beating
+					donor, the ability to bank tissue, and the number of grafts
+					available from each donor—tissue transplants are much more common
+					than organ transplants. The American Association of Tissue Banks
+					estimates that more than one million tissue transplants take place
+					in the United States each year.
+				<h4 class="subtitle" id="organtransplant">
+					<b><i> Living Donor </i></b>
+				</h4>
+				<p>In "living donors", the donor remains alive and donates a
+					renewable tissue, cell, or fluid (e.g. blood, skin), or donates an
+					organ or part of an organ in which the remaining organ can
+					regenerate or take on the workload of the rest of the organ
+					(primarily single kidney donation, partial donation of liver, lung
+					lobe, small bowel). Regenerative medicine may one day allow for
+					laboratory-grown organs, using patient's own cells via stem cells,
+					or healthy cells extracted from the failing organs.</p>
+				<h4 class="subtitle" id="organtransplant">
+					<b><i> Deceased Donor </i></b>
+				</h4>
+				<p>Deceased donors (formerly cadaveric) are people who have been
+					declared brain-dead and whose organs are kept viable by ventilators
+					or other mechanical mechanisms until they can be excised for
+					transplantation. Apart from brain-stem dead donors, who have formed
+					the majority of deceased donors for the last twenty years, there is
+					increasing use of Donation after Circulatory Death Donors (formerly
+					non-heart-beating donors) to increase the potential pool of donors
+					as demand for transplants continues to grow. Prior to the
+					recognition of brain death in the 1980s, all deceased organ donors
+					had died of circulatory death. These organs have inferior outcomes
+					to organs from a brain-dead donor; however given the scarcity of
+					suitable organs and the number of people who die waiting, any
+					potentially suitable organ must be considered.</p>
+				</br>
+				<hr />
+				</p>
+				</article>
+				<article class="textcontent">
+				<h3 class="subtitle" id="organtransplant">Allocation of donated
+					organs</h3>
+				<p>
+					In most countries there is a shortage of suitable organs for
+					transplantation. Countries often have formal systems in place to
+					manage the process of determining who is an organ donor and in what
+					order organ recipients receive available organs. <br> <br>
+					The overwhelming majority of deceased-donor organs in the United
+					States are allocated by federal contract to the Organ Procurement
+					and Transplantation Network (OPTN), held since it was created by
+					the Organ Transplant Act of 1984 by the United Network for Organ
+					Sharing or UNOS. (UNOS does not handle donor cornea tissue; corneal
+					donor tissue is usually handled by various eye banks.) Individual
+					regional organ procurement organizations (OPOs), all members of the
+					OPTN, are responsible for the identification of suitable donors and
+					collection of the donated organs. UNOS then allocates organs based
+					on the method considered most fair by the scientific leadership in
+					the field. The allocation methodology varies somewhat by organ, and
+					changes periodically. For example, liver allocation is based
+					partially on MELD score (Model of End-Stage Liver Disease), an
+					empirical score based on lab values indicative of the sickness of
+					the patient from liver disease. <br> <br> Experiencing
+					somewhat increased popularity, but still very rare, is directed or
+					targeted donation, in which the family of a deceased donor (often
+					honoring the wishes of the deceased) requests an organ be given to
+					a specific person. If medically suitable, the allocation system is
+					subverted, and the organ is given to that person. In the United
+					States, there are various lengths of waiting times due to the
+					different availabilities of organs in different UNOS regions. In
+					other countries such as the UK, only medical factors and the
+					position on the waiting list can affect who receives the organ. <br>
+					<br> One of the more publicized cases of this type was the
+					1994 Chester and Patti Szuber transplant. This was the first time
+					that a parent had received a heart donated by one of their own
+					children. Although the decision to accept the heart from his
+					recently killed child was not an easy decision, the Szuber family
+					agreed that giving Patti’s heart to her father would have been
+					something that she would have wanted. <br> <br> Access to
+					organ transplantation is one reason for the growth of medical
+					tourism.
+				</p>
+				<hr />
+				</article>
+				<article class="textcontent">
+				<h3 class="subtitle" id="organtransplant">Links</h3>
+				<p>
+					<a href="http://optn.transplant.hrsa.gov/" target="_blank">Organ
+						Procurement and Transplantation Network: OPTN</a> <br> <br>
+					<a href="http://www.organdonor.gov/index.html" target="_blank">Organdonor.gov</a>
+					<br> <br> <a
+						href="http://www.unos.org/donation/index.php?topic=organ_allocation"
+						target="_blank">UNOS</a> <br> <br> <a
+						href="http://www.nytimes.com/2012/02/19/health/lives-forever-linked-through-kidney-transplant-chain-124.html?pagewanted=all/"
+						target="_blank">New York Times article about kidney swap</a> <br>
+					<br>
+				</p>
+				<hr />
+				</article>
+			</div>
+
+			<div class="page" id="Hobbies">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/MessageGrey.png" /> Hobbies
+						</span>
+					</h2>
+				</div>
+				<article class="textcontent">
+				<p class="indent">Having a hobby that can relieve your everyday
+					stress, even for a few minutes, is a true blessing. My favorite
+					hobbies are to watch movies, listen to music, play videogames with
+					friends, working out and messing around on the computer. In the past 
+					year I have found a strong interest in Transformers and Marvel Comics.
+				</p>
+				</article>
+				<article>
+				<h4>Favorite Movies</h4>
+				<ol>
+					<li>The Shawshank Redemption</li>
+					<li>The Godfather</li>
+					<li>Star Wars: Episode VI - Return of the Jedi</li>
+					<li>The Dark Knight</li>
+					<li>Reservoir Dogs</li>
+				</ol>
+				</article>
+				<article>
+				<h4>Favorite Musicians</h4>
+				<ol>
+					<li>Pearl Jam</li>
+					<li>Foo Fighters</li>
+					<li>Led Zeppelin</li>
+					<li>The Beatles</li>
+					<li>Nirvana</li>
+				</ol>
+				</article>
+				<article>
+				<h4>Favorite Food</h4>
+				<ol>
+					<li>Everything My Mom makes</li>
+					<li>Pizza</li>
+					<li>Lasagna</li>
+					<li>Subs</li>
+					<li>Enchiladas</li>
+				</ol>
+				</article>
+			</div>
+
+			<div class="page" id="Pythora">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/pythora_29.png" /> <a
+							href="https://itunes.apple.com/us/app/pythora/id535251887?mt=8"
+							target="_blank">Pythora</a>
+						</span>
+					</h2>
+				</div>
+
+				<article class="textcontent">
+				<h3 class="subtitle" id="pythora">Screenshots</h3>
+				<p>
+					<img alt="iPhone Screenshot 1" class="portrait"
+						src="static/Screenshots/pythora1.png" width="125" height="223" />
+					<img alt="iPhone Screenshot 2" class="portrait"
+						src="static/Screenshots/pythora2.png" width="125" height="223" />
+					<img alt="iPhone Screenshot 1" class="portrait"
+						src="static/Screenshots/pythora3.png" width="125" height="223" />
+					<img alt="iPhone Screenshot 2" class="portrait"
+						src="static/Screenshots/pythora4.png" width="125" height="223" />
+					<img alt="iPhone Screenshot 2" class="portrait"
+						src="static/Screenshots/pythora5.png" width="125" height="223" />
+				<hr />
+				</p>
+				</article>
+				<article class="textcontent">
+				<h3 class="subtitle" id="pythora">Description</h3>
+				<p>
+					You'll never miss another scheduled time to take your medication.
+					Look forward to taking your medications on time, every time by
+					using the Pythora application. Pythora is the most flexible and
+					easy-to-use app for the iPhone and iPod Touch to help you remember
+					to take your medications, vitamins, or birth control pills on time.
+					<br> <br> The Pythora Application is an incredibly
+					flexible and easy to use application. It is not only a pill and
+					refill reminder, but also a comprehensive personal medication
+					record (PMR) app for your iPhone. Use the app to manage any
+					combination of medications, vitamins/supplements and birth control
+					pills. <br> <br> The Pythora has provided a tightly
+					integrated content from the most popular, complete and up to date
+					drug information website. Adding your medications will give you one
+					click access to check for drug interactions, dosage, and side
+					effects (all without leaving the app). <br> <br> *
+					MEDICATION LIST * <br> Intuitive interface lets you build a
+					list of medications and setup reminders with ease in just a few
+					seconds using the huge built in database of medications. <br>
+					<br> * MEDICATION INFORMATION * <br> Easy access to
+					comprehensive medical information for your medications including:
+					drug interactions, side effects, support information, and more. <br>
+					<br> * RELIABLE NOTIFICATIONS * <br> Pythora reliably
+					sends dose reminders with or without an internet connection.
+					Pythora also tracks the time zone you're in when travelling and
+					adjusts reminders accordingly, so you get notified correctly no
+					matter where you are. <br> <br> * FLEXIBLE SCHEDULING * <br>
+					Some apps can only remind you to take your medication at the same
+					time every day. Pythora helps you take doses on a
+					daily/weekly/monthly schedule. <br> <br> * CUSTOMIZABLE
+					DOSE AMOUNTS AND INSTRUCTIONS * <br> With Pythora, set the
+					drug name, dosage information, and notes that appear in the
+					reminders for each dose. Add custom notes to your reminders e.g.
+					take with food etc. <br> <br> * POSTPONE-ABLE REMINDERS *
+					<br> With Pythora, you can postpone a reminder by a period of
+					five minutes (in the future this will be configurable) in which a
+					new reminder will be displayed with the appropriate medication
+					information. <br> <br> * PRIVATE AND SECURE * <br>
+					No personally identifiable information is collected when using
+					Pythora, so you can keep your information private. <br> <br>
+					* MULTIPLE DRUG TYPES * <br> With Pythora, you can track drugs
+					taken via injections, inhalers, drops, sprays, ointments, patches,
+					and liquid doses. You can even add custom drug types for tracking
+					just about anything! <br> <br> * DOSE HISTORY AND
+					COMPLIANCE * <br> Pythora logs the date and time of doses you
+					take, skip, or postpone so you can view or email the history at any
+					time. <br> <br> * QUANTITY TRACKING AND REFILL ALERTS * <br>
+					Pythora tracks the remaining quantity of each drug you enter and
+					delivers a refill alert when running low. It will even track the
+					number of refills remaining and alert you when you have no refills
+					left! <br> <br> * MULTI-PERSON SUPPORT * <br> With
+					Pythora, you can assign specific medications to different people
+					(or even pets). Sort your medications by person, time of next dose,
+					drug name, or drug type - so you can keep your whole family's
+					medication schedule organized. <br> <br> * PYTHORA MAP
+					LEGEND * <br> Pythora application provides the legend map to
+					key elements in the application; for example the different colors
+					associated to the refill alert time periods. <br> <br> *
+					PYTHORA MEDICATION PICTURE * <br> Pythora application enables
+					the user to be able to take a picture of his/her medication or
+					retrieve a picture from the iPhone picture album to be display in
+					the Medication List. If a picture is not supplied to a specific
+					Medication a default Pill Remainder picture will be shown instead
+					per Medication in the list. <br> <br> * PYTHORA REMINDER
+					SOUNDS * <br> Pythora application provides the ability for the
+					user to select a specific audio file from a variety of audio sounds
+					that will help notify the user when a reminder is being displayed
+					on their iPhone pertaining to an alert on a Medication.
+				</p>
+				<hr />
+				</article>
+			</div>
+
+			<div class="page" id="SunriseAlarmClock">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/sunrise_alarm_29.png" /> <a
+							href="https://itunes.apple.com/us/app/sunrise-sunset-alarm-clock/id574200416?mt=8"
+							target="_blank">Sunrise-Sunset Alarm Clock</a>
+						</span>
+					</h2>
+				</div>
+				<article class="textcontent">
+				<h3 class="subtitle" id="sunrise">Screenshots</h3>
+				<p>
+					<img alt="iPhone Screenshot 1" class="portrait"
+						src="static/Screenshots/sunrise1.png" width="125" height="223" />
+					<img alt="iPhone Screenshot 2" class="portrait"
+						src="static/Screenshots/sunrise2.png" width="223" height="125" />
+					<img alt="iPhone Screenshot 1" class="portrait"
+						src="static/Screenshots/sunrise3.png" width="125" height="223" />
+					<img alt="iPhone Screenshot 2" class="portrait"
+						src="static/Screenshots/sunrise4.png" width="125" height="223" />
+				<hr />
+				</p>
+				</article>
+				<article class="textcontent">
+				<h3 class="subtitle" id="sunrisealarmclock">Description</h3>
+				<p>
+					Now your iOS device can remind you when it's sunrise or sunset,
+					wherever you travel! <br> <br> Sunrise-Sunset Alarm Clock
+					provides the ability to set the alarm based on when the sun will
+					rise (or set). The Sunrise-Sunset Alarm Clock gives you a simple
+					user interface that enables the user to be able to wake up at dawn,
+					or the crack of dawn, or before dawn without having to change the
+					alarm clock settings over the course of days, weeks, or even
+					months. <br> <br>
+				<center>************************ FEATURES
+					***********************</center>
+				* Sunrise-Sunset Alarm retrieves the current sunrise and sunset
+				times based on the specific day of the year. <br>
+				* Find solar midnight and solar noon, and all three periods of time
+				(dawn and dusk) periods: astronomical time, nautical time, and civil
+				time. Keep tabs on the next solstice and equinox. <br>
+				* Reminders and Alarms: Use Sunrise-Sunset Alarm Clock as a natural
+				alarm clock that you can set to any event (like sunset, golden hour
+				or solar noon), and the alarm or reminder time will adjust gradually
+				as the days change with the seasons. <br>
+				* Automatic Location: Sunrise-Sunset Alarm Clock not only calculates
+				the amount of daylight and sunrise and sunset times, but does so for
+				any location in the world (both Northern and Southern hemispheres)
+				by using your device's GPS... no network connection required. <br>
+				* Optional location-aware alarms. Sunrise-Sunset Alarm Clock knows
+				when you change with your location; and as you travel it will adjust
+				any alarms you set relative to sunrise and sunset times. <br>
+				* Sunrise-Sunset Alarm Clock contains several options -> live
+				weather changes, local notification support, vibrate mode, and alarm
+				sounds (50 different alarm sounds). <br>
+				<br>
+				<center>*************************** NOTE
+					***************************</center>
+				Note: On iOS 5 you have to enable notifications for this app for it
+				to work in the background. there's a central settings screen for
+				notifications where you have to explicitly opt in each app you care
+				about...
+				</p>
+				<hr />
+				</article>
+			</div>
+
+			<div class="page" id="Instareader">
+				<div class="title">
+					<h2>
+						<span class="pagetitle"> <img class="icon"
+							src="static/Images/instareader-icon_29_pixels.png" /> <a
+							href="https://itunes.apple.com/us/app/instareaderrss/id530271901?mt=8"
+							target="_blank">InstareaderRSS</a>
+						</span>
+					</h2>
+				</div>
+				<article class="textcontent">
+				<h3 class="subtitle" id="instareader">Screenshots</h3>
+				<p>
+					<img alt="iPhone Screenshot 1" class="portrait"
+						src="static/Screenshots/instareader1.png" width="125" height="223" />
+					<img alt="iPhone Screenshot 2" class="portrait"
+						src="static/Screenshots/instareader2.png" width="125" height="223" />
+					<img alt="iPhone Screenshot 1" class="portrait"
+						src="static/Screenshots/instareader3.png" width="125" height="223" />
+					<img alt="iPhone Screenshot 2" class="portrait"
+						src="static/Screenshots/instareader4.png" width="125" height="223" />
+					<img alt="iPhone Screenshot 2" class="portrait"
+						src="static/Screenshots/instareader5.png" width="125" height="223" />
+				<hr />
+				</p>
+				</article>
+				<article class="textcontent">
+				<h3 class="subtitle" id="instareader">Description</h3>
+				<p>
+					The InstareaderRSS application is a fast and highly customizable
+					news notifier that uses the third party API (Google Reader API) in
+					which you select some of your favorites website, if they have RSS
+					or Atom feeds and each time new information arrives. You can
+					quickly read the title and the source of the news and if you want
+					to read more through an interactive web view. The views containing
+					the list of RSS and/or Atom articles (grouped together and
+					individual in different sections within the application) contain
+					Data Filters that allow the user to change the look of the table
+					view of Web Articles (i.e. search by newest, oldest, unread,
+					website, etc). Once you have read the news in detail you can share
+					it on Email, Twitter, and/or Facebook (right to left swipe gesture
+					open the Sharing Buttons) or directly open the web page associated
+					with the article and using the assorted sharing buttons (i.e.
+					Email, Twitter, Facebook). The InstareaderRSS provides a specific
+					side menu enabling the user to jump between different pages within
+					the Instareader without go back through the main menu of the
+					application. While the user is reading the web articles, he/she
+					will be able to add individual articles to a Reading List section.
+					The Reading List section is grouped by the website name in which
+					each section only contains the articles from that website. The
+					Reading List section saves the web articles for the given time
+					period until the user has deleted them. To enable the user to fully
+					understand how the application works there is a view containing all
+					the symbols within the application and what they are called in the
+					section called Symbol Map. The Instareader app also contains a
+					cache that enables offline reading for sites that allow caching of
+					there website (currently the user must view the webpage once for it
+					to cache). <br> <br> The InstareaderRSS application is
+					Advertisement Free. <br> <br> Listed Features: <br>
+					* Supports Retina display. <br> * Browse by feed or folders <br>
+					* Supports feed management - add/delete/sort subscriptions and
+					folders. <br> * Able to set up each subscription to open
+					articles directly in RSS, full text mode, or web (online only). <br>
+					* Able to mark as UNREAD/READ <br> * Able to mark all items as
+					read for any RSS subscription or mark only loaded items as read. <br>
+					* Able to show only feeds/folders with unread items. <br> *
+					Swipe (2 finger touch) to navigate between different views <br>
+					* Swipe to navigate RSS stories using two finger swipe from left to
+					right and right to left on the WebView <br> * Pinch RSS
+					articles to change font size. <br> * Copy-and-Paste titles,
+					links, or full articles. <br> * Swipe (1 finger touch) to
+					display menu for Social Panel View (currently Email, Twitter,
+					Facebook) in the TableView Cell <br> * Facebook sharing. <br>
+					* Twitter sharing with optional Bit.ly personal account. <br>
+					* E-mail sharing with optional default recipients. <br> * Full
+					text mode in web browser <br> * Supports keyword search to
+					find and add feeds. <br> * Able to mark items as read based on
+					date. <br> * Able to mark items as read or star/unstar by
+					tapping read/unread button associated with the web article <br>
+					* Able to automatically mark items as read while scrolling
+					headlines. <br> * Badge Count on the icon containing Unread
+					Articles in the Reading List <br> * No ads <br> <br>
+					If you like InstareaderRSS, please consider writing positive
+					reviews on the App Store. We keep adding features, fixing bugs, and
+					improving app performance. Please send us feedback at
+					instareaderrss@gmail.com. Thanks for your support.
+				</p>
+				<hr />
+				</article>
+			</div>
+
+			<div class="page" id="rahulnadella">
+				<br> <br>
+				<div class="ci">
+					<h2>
+						<span class="pagetitle"> <a
+							href="http://www.twitter.com/rahulnadella"><img class="icon"
+								src="static/Images/twitter2.png" height=36 /></a>Hey! If you want
+							to see my latest projects in real time, follow me on Twitter <a
+							style="text-decoration: none;"
+							href="http://www.twitter.com/rahulnadella" target="_blank">@rahulnadella</a>
+						</span>
+					</h2>
+				</div>
+			</div>
+				
+</body>
